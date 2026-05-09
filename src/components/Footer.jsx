@@ -23,7 +23,6 @@ export function Footer() {
     {
       title: 'Company',
       links: [
-        { name: 'About Us', href: '/about' },
         { name: 'Contact Us', href: '#' },
       ],
     },

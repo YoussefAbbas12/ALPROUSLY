@@ -10,7 +10,6 @@ export function Products() {
   const [products, setProducts] = useState([])
   const [filteredProducts, setFilteredProducts] = useState([])
   const [searchQuery, setSearchQuery] = useState('')
-  const [activeCategory, setActiveCategory] = useState('All')
 
   useEffect(() => {
     const all = getProducts()
@@ -20,16 +19,13 @@ export function Products() {
 
   useEffect(() => {
     let result = products
-    if (activeCategory !== 'All') {
-      result = result.filter(p => p.category === activeCategory)
-    }
     if (searchQuery) {
       result = result.filter(p => 
         p.name.toLowerCase().includes(searchQuery.toLowerCase())
       )
     }
     setFilteredProducts(result)
-  }, [searchQuery, activeCategory, products])
+  }, [searchQuery, products])
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
