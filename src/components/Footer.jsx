@@ -42,10 +42,10 @@ export function Footer() {
               <span className="text-3xl font-black text-white tracking-tighter">ALPROUSLY</span>
             </Link>
             <p className="text-slate-400 text-lg leading-relaxed mb-10 max-w-sm">
-              Pushing the boundaries of performance and style. Engineered for athletes who never settle for second best.
+              Pushing the boundaries of performance and style. Engineered for those who never settle for second best.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Twitter, Facebook, Youtube].map((Icon, i) => (
+              {[Instagram, Facebook, Tiktok].map((Icon, i) => (
                 <motion.a
                   key={i}
                   href="#"
