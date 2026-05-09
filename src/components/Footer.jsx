@@ -14,13 +14,6 @@ export function Footer() {
       ],
     },
     {
-      title: 'Support',
-      links: [
-        { name: 'Shipping Policy', href: '#' },
-        { name: 'FAQ', href: '#' },
-      ],
-    },
-    {
       title: 'Contact Us',
       links: [
         { name: 'WhatsApp', href: 'href="https://wa.me/01020396397?text=Hello%20there!"' },
