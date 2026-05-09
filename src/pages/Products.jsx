@@ -12,8 +12,6 @@ export function Products() {
   const [searchQuery, setSearchQuery] = useState('')
   const [activeCategory, setActiveCategory] = useState('All')
 
-  const categories = ['All', 'Apparel', 'Footwear', 'Accessories']
-
   useEffect(() => {
     const all = getProducts()
     setProducts(all)
@@ -41,8 +39,6 @@ export function Products() {
         <section className="px-4 sm:px-6 lg:px-8 mb-16">
           <div className="max-w-7xl mx-auto">
             <div className="flex flex-col md:flex-row md:items-center justify-between gap-8 mb-12">
-              <h1 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase leading-none">Gear</h1>
-
               <div className="flex items-center gap-4 w-full md:w-auto">
                  <div className="relative w-full md:w-80">
                     <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-slate-500" size={20} />
@@ -55,22 +51,6 @@ export function Products() {
                     />
                  </div>
               </div>
-            </div>
-
-            <div className="flex flex-wrap gap-3 overflow-x-auto pb-4 scrollbar-hide">
-              {categories.map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  className={`px-8 py-3 rounded-2xl font-black text-sm uppercase tracking-widest transition-all shrink-0 ${
-                    activeCategory === cat
-                      ? 'bg-blue-600 text-white glow-primary border-transparent'
-                      : 'bg-slate-900 text-slate-400 border border-white/5 hover:border-white/20'
-                  }`}
-                >
-                  {cat}
-                </button>
-              ))}
             </div>
           </div>
         </section>
