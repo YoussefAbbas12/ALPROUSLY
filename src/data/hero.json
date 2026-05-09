@@ -1,0 +1,23 @@
+[
+  {
+    "id": "1",
+    "title": "ALPROUSLY GEAR FOR THE ELITE",
+    "description": "Experience the pinnacle of sports technology with our latest compression gear designed for high-intensity athletes.",
+    "image": "https://images.unsplash.com/photo-1534438327276-14e5300c3a48?q=80&w=800",
+    "buttonText": "Start Now"
+  },
+  {
+    "id": "2",
+    "title": "LIMITLESS PERFORMANCE",
+    "description": "Push beyond your boundaries with equipment that works as hard as you do. Engineered for the champions.",
+    "image": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?q=80&w=800",
+    "buttonText": "Explore Collection"
+  },
+  {
+    "id": "3",
+    "title": "AEROSWIFT TECHNOLOGY",
+    "description": "Lightweight, breathable, and incredibly durable. The future of athletic apparel is here.",
+    "image": "https://images.unsplash.com/photo-1539185441755-769473a23570?q=80&w=800",
+    "buttonText": "View Gear"
+  }
+]
