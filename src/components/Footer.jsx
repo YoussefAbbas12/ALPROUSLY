@@ -45,7 +45,7 @@ export function Footer() {
               Pushing the boundaries of performance and style. Engineered for those who never settle for second best.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Facebook, Tiktok].map((Icon, i) => (
+              {[Instagram, Facebook].map((Icon, i) => (
                 <motion.a
                   key={i}
                   href="#"
