@@ -27,7 +27,6 @@ export function Footer() {
   const socialIcons = [
     { type: 'instagram', icon: Instagram, link: 'https://instagram.com' },
     { type: 'facebook', icon: Facebook, link: 'https://facebook.com' },
-    { type: 'youtube', icon: Youtube, link: 'https://youtube.com' },
     { type: 'tiktok', link: 'https://tiktok.com' },
   ]
 
@@ -130,7 +129,7 @@ export function Footer() {
         {/* Bottom */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
           <p className="text-slate-600 text-xs font-medium uppercase tracking-widest">
-            © {currentYear} Inferno Dev. ALL RIGHTS RESERVED.
+            © {currentYear} InfernoDevs Team. ALL RIGHTS RESERVED.
           </p>
         </div>
       </div>
