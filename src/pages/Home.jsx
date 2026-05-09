@@ -50,8 +50,8 @@ export function Home() {
                 viewport={{ once: true }}
               >
                 <span className="text-blue-500 font-black tracking-[0.3em] uppercase text-xs mb-4 block ml-1">Elite Collection</span>
-                <h2 className="text-6xl md:text-8xl font-black text-white tracking-tighter uppercase leading-[0.85]">
-                  ELEVATE <br /> YOUR LIMITS
+                <h2 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-[0.85]">
+                  Top Sale
                 </h2>
               </motion.div>
               <motion.div
@@ -103,7 +103,7 @@ export function Home() {
                   transition={{ delay: 0.3 }}
                   className="text-5xl md:text-8xl font-black text-white mb-8 uppercase tracking-tighter max-w-4xl leading-[0.9]"
                  >
-                   FOR THOSE WHO <br /> <span className="text-blue-500 italic">NEVER</span> STOP.
+                   Not For <br /> <span className="text-blue-500 italic">Every</span>one.
                  </motion.h2>
                  <motion.div
                   initial={{ opacity: 0, y: 20 }}
