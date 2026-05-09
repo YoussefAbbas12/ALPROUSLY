@@ -4,25 +4,31 @@ import { Instagram, Facebook, Youtube, Mail, ArrowUpRight } from 'lucide-react'
 export function Footer() {
   const currentYear = new Date().getFullYear()
 
-  const footerLinks = [
-    {
-      title: 'Shop',
-      links: [
-        { name: 'All Products', href: '/products', external: false },
-        { name: 'New Arrivals', href: '/products', external: false },
-      ],
-    },
-    {
-      title: 'Contact Us',
-      links: [
-        { 
-          name: 'WhatsApp', 
-          href: 'https://wa.me/201020396397?text=Hello%20there!', 
-          external: true 
-        },
-      ],
-    },
-  ]
+const footerLinks = [
+  {
+    title: 'Shop',
+    links: [
+      { name: 'All Products', href: '/products', external: false },
+      { name: 'New Arrivals', href: '/products', external: false },
+    ],
+  },
+  {
+    title: 'Support',
+    links: [
+      { name: 'Shipping Policy', href: '#', external: false },
+      { name: 'FAQ', href: '#', external: false },
+    ],
+  },
+  {
+    title: 'Follow Us',
+    links: [
+      { type: 'instagram', icon: Instagram, href: 'https://instagram.com', external: true },
+      { type: 'facebook', icon: Facebook, href: 'https://facebook.com', external: true },
+      { type: 'youtube', icon: Youtube, href: 'https://youtube.com', external: true },
+      { type: 'tiktok', href: 'https://tiktok.com', external: true },
+    ],
+  },
+]
 
   const socialIcons = [
     { type: 'instagram', icon: Instagram, link: 'https://instagram.com' },
@@ -71,39 +77,58 @@ export function Footer() {
 
           {/* Links */}
           <div className="lg:col-span-5 grid grid-cols-2 sm:grid-cols-3 gap-8">
-            {footerLinks.map((column) => (
-              <div key={column.title}>
-                <h3 className="text-white font-black uppercase tracking-widest text-xs mb-8">
-                  {column.title}
-                </h3>
+           {footerLinks.map((column) => (
+  <div key={column.title}>
+    <h3 className="text-white font-black uppercase tracking-widest text-xs mb-8">
+      {column.title}
+    </h3>
 
-                <ul className="space-y-4">
-                  {column.links.map((link) => (
-                    <li key={link.name}>
-                      {link.external ? (
-                        <a
-                          href={link.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-slate-500 hover:text-blue-400 transition-colors flex items-center gap-1 group"
-                        >
-                          {link.name}
-                          <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
-                        </a>
-                      ) : (
-                        <Link
-                          to={link.href}
-                          className="text-slate-500 hover:text-blue-400 transition-colors flex items-center gap-1 group"
-                        >
-                          {link.name}
-                          <ArrowUpRight size={14} className="opacity-0 -translate-y-1 translate-x-1 group-hover:opacity-100 group-hover:translate-y-0 group-hover:translate-x-0 transition-all" />
-                        </Link>
-                      )}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
+    <ul className="space-y-4">
+      {column.links.map((link, i) => (
+        <li key={i}>
+          
+          {/* لو column بتاع icons */}
+          {link.icon || link.type === 'tiktok' ? (
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-3 text-slate-400 hover:text-white transition-all"
+            >
+              {link.type === 'tiktok'
+                ? <i className="fa-brands fa-tiktok text-lg"></i>
+                : <link.icon size={18} />
+              }
+              <span className="capitalize">{link.type}</span>
+            </a>
+          ) : link.external ? (
+            
+            <a
+              href={link.href}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-slate-500 hover:text-blue-400 transition-colors flex items-center gap-1 group"
+            >
+              {link.name}
+              <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-all" />
+            </a>
+
+          ) : (
+            
+            <Link
+              to={link.href}
+              className="text-slate-500 hover:text-blue-400 transition-colors flex items-center gap-1 group"
+            >
+              {link.name}
+              <ArrowUpRight size={14} className="opacity-0 group-hover:opacity-100 transition-all" />
+            </Link>
+
+          )}
+        </li>
+      ))}
+    </ul>
+  </div>
+))}
           </div>
 
           {/* Contact */}
