@@ -52,10 +52,10 @@ export function ProductCard({ product }) {
         </h3>
         
         <div className="flex items-center gap-4 mb-6">
-           <span className="text-2xl font-black text-blue-400 tracking-tighter">${product.price}</span>
+           <span className="text-2xl font-black text-blue-400 tracking-tighter">{product.price}EGP</span>
            {product.oldPrice && (
              <span className="text-lg font-bold text-slate-600 line-through decoration-blue-500/50 decoration-2 tracking-tighter italic">
-               ${product.oldPrice}
+               {product.oldPrice}EGP
              </span>
            )}
         </div>
