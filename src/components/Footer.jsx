@@ -45,16 +45,16 @@ export function Footer() {
               Pushing the boundaries of performance and style. Engineered for those who never settle for second best.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Facebook , Youtube].map((Icon, i) => (
-                <motion.a
-                  key={i}
-                  href="#"
-                  whileHover={{ y: -5, scale: 1.1 }}
-                  className="w-12 h-12 glass rounded-2xl flex items-center justify-center text-slate-400 hover:text-white transition-all"
-                >
+{[Instagram, Facebook , Youtube].map((Icon, i) => (
+                <a
+              key={i}
+              href="#"
+              whileHover={{ y: -5, scale: 1.1 }}
+              className="w-12 h-12 glass rounded-2xl flex items-center justify-center text-slate-400 hover:text-white transition-all"
+            >
                   
                   {Icon==Youtube ? <i className="fa-brands fa-tiktok"></i> : <Icon size={20} />}
-                </motion.a>
+                </a>
               ))}
             </div>
           </div>
