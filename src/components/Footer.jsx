@@ -21,9 +21,9 @@ export function Footer() {
       ],
     },
     {
-      title: 'Company',
+      title: 'Brand',
       links: [
-        { name: 'Contact Us', href: '#' },
+        { name: 'Contact Us', href: 'href="https://wa.me/01020396397?text=Hello%20there!"' },
       ],
     },
   ]
