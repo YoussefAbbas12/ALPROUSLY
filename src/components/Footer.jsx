@@ -84,8 +84,8 @@ export function Footer() {
         </div>
 
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-600 text-xs font-medium uppercase tracking-widest">
-            © {currentYear} ALPROUSLY PERFORMANCE GEAR. ALL RIGHTS RESERVED.
+          <p className="text-slate-600 text-xs font-medium uppercase tracking-widest"> 
+            © {currentYear} Inferno Devs Team. ALL RIGHTS RESERVED.
           </p>
         </div>
       </div>
