@@ -42,7 +42,6 @@ export function Footer() {
                 <a
               key={i}
               href={socialLinks[i]}
-              whileHover={{ y: -5, scale: 1.1 }}
               className="w-12 h-12 glass rounded-2xl flex items-center justify-center text-slate-400 hover:text-white transition-all"
             >
                   
