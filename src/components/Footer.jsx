@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { motion } from 'framer-motion'
-import { Instagram, Twitter, Facebook, Youtube, Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react'
+import { Instagram, Twitter, Facebook, Youtube, Mail, MapPin, Phone, ArrowUpRight, Tiktok } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
@@ -45,7 +45,7 @@ export function Footer() {
               Pushing the boundaries of performance and style. Engineered for those who never settle for second best.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Facebook].map((Icon, i) => (
+              {[Instagram, Facebook, Tiktok].map((Icon, i) => (
                 <motion.a
                   key={i}
                   href="#"
