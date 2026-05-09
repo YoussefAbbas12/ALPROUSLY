@@ -21,9 +21,9 @@ export function Footer() {
       ],
     },
     {
-      title: 'Brand',
+      title: 'Contact Us',
       links: [
-        { name: 'Contact Us', href: 'href="https://wa.me/01020396397?text=Hello%20there!"' },
+        { name: 'WhatsApp', href: 'href="https://wa.me/01020396397?text=Hello%20there!"' },
       ],
     },
   ]
