@@ -50,7 +50,7 @@ export function Home() {
                 viewport={{ once: true }}
               >
                 <span className="text-blue-500 font-black tracking-[0.3em] uppercase text-xs mb-4 block ml-1">Elite Collection</span>
-                <h2 className="text-6xl md:text-8xl font-black text-white tracking-tighter leading-[0.85]">
+                <h2 className="text-6xl md:text-8xl font-black text-white uppercase tracking-tighter leading-[0.85]">
                   Top Sale
                 </h2>
               </motion.div>
@@ -111,10 +111,10 @@ export function Home() {
                   transition={{ delay: 0.5 }}
                  >
                    <Link 
-                    to="/about" 
+                    to="/products" 
                     className="w-fit px-12 py-6 bg-white text-slate-950 font-black rounded-2xl hover:bg-blue-600 hover:text-white transition-all glow-primary text-xl"
                    >
-                     Our Philosophy
+                     Our Products
                    </Link>
                  </motion.div>
               </div>
