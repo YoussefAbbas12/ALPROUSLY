@@ -128,7 +128,7 @@ export function Footer() {
 
         {/* Bottom */}
         <div className="pt-12 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6">
-          <p className="text-slate-600 text-xs font-medium uppercase tracking-widest">
+          <p className="text-slate-600 text-xs font-medium tracking-widest">
             © {currentYear} InfernoDevs Team. ALL RIGHTS RESERVED.
           </p>
         </div>
