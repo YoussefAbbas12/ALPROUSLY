@@ -26,8 +26,7 @@ export function Cart() {
   }
 
   const subtotal = cartItems.reduce((sum, item) => sum + item.product.price * item.quantity, 0)
-  const shipping = cartItems.length > 0 ? 10 : 0
-  const total = subtotal + shipping
+  const total = subtotal 
 
   return (
     <div className="min-h-screen bg-slate-950 text-slate-50">
@@ -112,7 +111,7 @@ export function Cart() {
                     </div>
                     <div className="flex justify-between text-slate-500 font-black uppercase tracking-widest text-[10px]">
                       <span>Shipping</span>
-                      <span className="text-white">{shipping.toFixed(2)} EGP</span>
+                      <span className="text-white">----</span>
                     </div>
                     <div className="pt-8 border-t border-white/10 flex justify-between items-center">
                       <span className="text-xl font-black text-white uppercase tracking-tighter">Total</span>
