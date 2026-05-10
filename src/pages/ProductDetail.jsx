@@ -69,26 +69,7 @@ export function ProductDetail() {
                 ))}
               </div>
 
-              <div className="flex-1 relative aspect-[4/5] rounded-[2.5rem] md:rounded-[3rem] overflow-hidden bg-slate-900 border border-white/5 shadow-2xl">
-                <AnimatePresence mode="wait">
-                  <motion.img
-                    key={activeImage}
-                    initial={{ opacity: 0, scale: 1.1 }}
-                    animate={{ opacity: 1, scale: 1 }}
-                    exit={{ opacity: 0, scale: 0.9 }}
-                    src={product.images[activeImage].path}
-                    className="w-full h-full object-cover"
-                  />
-                </AnimatePresence>
-                <div className="absolute top-6 right-6 flex flex-col gap-3">
-                   <button className="p-4 glass rounded-full text-white hover:bg-white hover:text-slate-950 transition-all shadow-xl">
-                      <Heart size={20} />
-                   </button>
-                   <button className="p-4 glass rounded-full text-white hover:bg-white hover:text-slate-950 transition-all shadow-xl">
-                      <Share2 size={20} />
-                   </button>
-                </div>
-              </div>
+              
             </div>
 
             {/* Info */}
