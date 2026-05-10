@@ -94,7 +94,7 @@ export function Cart() {
                            </div>
                         </div>
                         <div className="mt-auto flex items-end justify-between">
-                           <span className="text-3xl font-black text-blue-400 tracking-tighter">${(item.product.price * item.quantity).toFixed(2)}</span>
+                           <span className="text-3xl font-black text-blue-400 tracking-tighter">{(item.product.price * item.quantity).toFixed(2)}EGP</span>
                         </div>
                       </div>
                     </motion.div>
