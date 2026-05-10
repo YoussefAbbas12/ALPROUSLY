@@ -22,9 +22,9 @@ const footerLinks = [
   {
     title: 'Follow Us',
     links: [
-      { type: 'instagram', icon: Instagram, href: 'https://www.instagram.com/alprously?utm_source=qr&igsh=MW05NWExZ3EzanNyNQ==', external: true },
-      { type: 'facebook', icon: Facebook, href: 'https://www.facebook.com/share/18QD12hQKs/', external: true },
-      { type: 'tiktok', href: 'https://www.tiktok.com/@alprously?_r=1&_t=ZS-96FKlHbXgAP', external: true },
+      { type: 'instagram', icon: Instagram, href: 'https://www.instagram.com/alprously?utm_source=qr&igsh=MW05NWExZ3EzanNyNQ==', external: true, user: '@Alprously' },
+      { type: 'facebook', icon: Facebook, href: 'https://www.facebook.com/share/18QD12hQKs/', external: true, user: '@Alprously' },
+      { type: 'tiktok', href: 'https://www.tiktok.com/@alprously?_r=1&_t=ZS-96FKlHbXgAP', external: true , user: '@Alprously'},
     ],
   },
 ]
@@ -82,7 +82,7 @@ const footerLinks = [
                 ? <i className="fa-brands fa-tiktok text-lg"></i>
                 : <link.icon size={18} />
               }
-              <span className="capitalize">{link.type}</span>
+              <span className="capitalize">{link.user}</span>
             </a>
           ) : link.external ? (
             
