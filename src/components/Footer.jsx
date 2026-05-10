@@ -3,6 +3,8 @@ import { Instagram, Facebook, Youtube, Mail, ArrowUpRight } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
+  const phoneNumber = '01016839583'
+  const encodedMessage = ''
 
 const footerLinks = [
   {
@@ -13,9 +15,9 @@ const footerLinks = [
     ],
   },
   {
-    title: 'Support',
+    title: 'Contact us',
     links: [
-      { name: 'Shipping Policy', href: '#', external: false },
+      { name: 'Shipping Policy', href: 'https://wa.me/${phoneNumber}?text=${encodedMessage}', external: false },
       { name: 'FAQ', href: '#', external: false },
     ],
   },
