@@ -3,8 +3,7 @@ import { Instagram, Facebook, Youtube, Mail, ArrowUpRight } from 'lucide-react'
 
 export function Footer() {
   const currentYear = new Date().getFullYear()
-  const phoneNumber = '201020396397'
-  const encodedMessage = 'Hello There'
+  const phoneNumber = '201016839583'
 
 const footerLinks = [
   {
@@ -17,16 +16,15 @@ const footerLinks = [
   {
     title: 'Contact us',
     links: [
-      { name: 'WhatsApp', href: `https://wa.me/${phoneNumber}?text=${encodedMessage}`, external: false },
+      { name: 'WhatsApp', href: `https://wa.me/${phoneNumber}`, external: false },
     ],
   },
   {
     title: 'Follow Us',
     links: [
-      { type: 'instagram', icon: Instagram, href: 'https://instagram.com', external: true },
-      { type: 'facebook', icon: Facebook, href: 'https://facebook.com', external: true },
-      { type: 'youtube', icon: Youtube, href: 'https://youtube.com', external: true },
-      { type: 'tiktok', href: 'https://tiktok.com', external: true },
+      { type: 'instagram', icon: Instagram, href: 'https://www.instagram.com/alprously?utm_source=qr&igsh=MW05NWExZ3EzanNyNQ==', external: true },
+      { type: 'facebook', icon: Facebook, href: 'https://www.facebook.com/share/18QD12hQKs/', external: true },
+      { type: 'tiktok', href: 'https://www.tiktok.com/@alprously?_r=1&_t=ZS-96FKlHbXgAP', external: true },
     ],
   },
 ]
@@ -57,23 +55,7 @@ const footerLinks = [
               Pushing the boundaries of performance and style. Engineered for those who never settle for second best.
             </p>
 
-            {/* Social Icons */}
-            <div className="flex gap-4">
-              {socialIcons.map((item) => (
-                <a
-                  key={item.type}
-                  href={item.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="w-12 h-12 glass rounded-2xl flex items-center justify-center text-slate-400 hover:text-white transition-all"
-                >
-                  {item.type === 'tiktok'
-                    ? <i className="fa-brands fa-tiktok"></i>
-                    : <item.icon size={20} />
-                  }
-                </a>
-              ))}
-            </div>
+           
           </div>
 
           {/* Links */}
