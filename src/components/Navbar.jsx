@@ -47,7 +47,7 @@ export function Navbar() {
         }`}>
           {/* Logo */}
           <Link to="/" className="flex items-center gap-2 md:gap-3 group shrink-0 ml-2">
-            <div className="relative w-8 h-8 md:w-10 md:h-10 rounded-lg md:rounded-xl overflow-hidden glow-primary group-hover:scale-110 transition-transform duration-500">
+            <div className="relative w-8 h-8 md:w-10 md:h-10 rounded-5 overflow-hidden glow-primary group-hover:scale-110 transition-transform duration-500">
               <img src="/logo.png" alt="Alprously" className="w-full h-full object-cover" />
             </div>
             <span className="text-lg md:text-xl font-black text-white tracking-tighter">ALPROUSLY</span>
