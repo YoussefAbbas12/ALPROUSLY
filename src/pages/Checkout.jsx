@@ -21,9 +21,10 @@ export function Checkout() {
     if (withDetails.length === 0 && !orderConfirmed) navigate('/cart')
     else setCartItems(withDetails)
   }, [navigate, orderConfirmed])
-
+  
   const subtotal = cartItems.reduce((sum, item) => sum + item.product.price * item.quantity, 0)
-  const total = subtotal + 10
+  const shippingPrice = 60
+  const total = subtotal + shippingPrice
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -208,15 +209,15 @@ export function Checkout() {
               <div className="space-y-4 pt-6 border-t border-white/10">
                 <div className="flex justify-between text-slate-500 font-bold uppercase tracking-widest text-xs">
                   <span>Subtotal</span>
-                  <span className="text-white">${subtotal.toFixed(2)}</span>
+                  <span className="text-white">{subtotal.toFixed(2)} EGP</span>
                 </div>
                 <div className="flex justify-between text-slate-500 font-bold uppercase tracking-widest text-xs">
                   <span>Shipping</span>
-                  <span className="text-white">$10.00</span>
+                  <span className="text-white">{shippingPrice} EGP</span>
                 </div>
                 <div className="pt-6 border-t border-white/10 flex justify-between items-center">
                   <span className="text-xl font-black text-white uppercase">Total</span>
-                  <span className="text-4xl font-black text-blue-400">${total.toFixed(2)}</span>
+                  <span className="text-4xl font-black text-blue-400">{total.toFixed(2)}EGP</span>
                 </div>
               </div>
 
