@@ -100,7 +100,7 @@ export function ProductDetail() {
                 <h1 className="text-5xl md:text-7xl font-black text-white mb-6 leading-none tracking-tighter uppercase">
                   {product.name}
                 </h1>
-                <p className="text-4xl font-black text-blue-400 tracking-tighter">${product.price.toFixed(2)}</p>
+                <p className="text-4xl font-black text-blue-400 tracking-tighter">{product.price.toFixed(2)}EGP</p>
               </div>
 
               <p className="text-xl text-slate-400 mb-12 leading-relaxed font-light">
