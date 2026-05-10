@@ -17,7 +17,7 @@ const footerLinks = [
   {
     title: 'Contact us',
     links: [
-      { name: 'Shipping Policy', href: 'https://wa.me/${phoneNumber}?text=${encodedMessage}', external: false },
+      { name: 'WhatsApp', href: `https://wa.me/${phoneNumber}?text=${encodedMessage}`, external: false },
       { name: 'FAQ', href: '#', external: false },
     ],
   },
