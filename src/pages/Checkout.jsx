@@ -23,8 +23,7 @@ export function Checkout() {
   }, [navigate, orderConfirmed])
   
   const subtotal = cartItems.reduce((sum, item) => sum + item.product.price * item.quantity, 0)
-  const shippingPrice = 60
-  const total = subtotal + shippingPrice
+  const total = subtotal
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -213,7 +212,7 @@ export function Checkout() {
                 </div>
                 <div className="flex justify-between text-slate-500 font-bold uppercase tracking-widest text-xs">
                   <span>Shipping</span>
-                  <span className="text-white">{shippingPrice} EGP</span>
+                  <span className="text-white">----</span>
                 </div>
                 <div className="pt-6 border-t border-white/10 flex justify-between items-center">
                   <span className="text-xl font-black text-white uppercase">Total</span>
