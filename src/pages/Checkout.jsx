@@ -199,7 +199,7 @@ export function Checkout() {
                       <div className="flex-1">
                         <h4 className="font-bold text-white line-clamp-1">{item.product.name}</h4>
                         <p className="text-xs text-slate-500 font-black uppercase mt-1">{item.size} • x{item.quantity}</p>
-                        <p className="text-blue-400 font-black mt-1">${(item.product.price * item.quantity).toFixed(2)}</p>
+                        <p className="text-blue-400 font-black mt-1">{(item.product.price * item.quantity).toFixed(2)}EGP</p>
                       </div>
                    </div>
                  ))}
