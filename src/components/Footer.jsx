@@ -45,7 +45,7 @@ const footerLinks = [
           {/* Logo + Description */}
           <div className="lg:col-span-4">
             <Link to="/" className="flex items-center gap-3 mb-8 group">
-              <div className="relative w-12 h-12 rounded-2xl overflow-hidden group-hover:scale-110 transition-transform duration-500">
+              <div className="relative w-12 h-12 rounded-4xl overflow-hidden group-hover:scale-110 transition-transform duration-500">
                 <img src="/logo.png" alt="Alprously" className="w-full h-full object-cover" />
               </div>
               <span className="text-3xl font-black text-white tracking-tighter">ALPROUSLY</span>
