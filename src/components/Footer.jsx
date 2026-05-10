@@ -4,7 +4,7 @@ import { Instagram, Facebook, Youtube, Mail, ArrowUpRight } from 'lucide-react'
 export function Footer() {
   const currentYear = new Date().getFullYear()
   const phoneNumber = '01016839583'
-  const encodedMessage = ''
+  const encodedMessage = 'Hello There'
 
 const footerLinks = [
   {
