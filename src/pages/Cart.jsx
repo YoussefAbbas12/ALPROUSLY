@@ -108,15 +108,15 @@ export function Cart() {
                   <div className="space-y-6 mb-12">
                     <div className="flex justify-between text-slate-500 font-black uppercase tracking-widest text-[10px]">
                       <span>Subtotal</span>
-                      <span className="text-white">${subtotal.toFixed(2)}</span>
+                      <span className="text-white">{subtotal.toFixed(2)} EGP</span>
                     </div>
                     <div className="flex justify-between text-slate-500 font-black uppercase tracking-widest text-[10px]">
                       <span>Shipping</span>
-                      <span className="text-white">${shipping.toFixed(2)}</span>
+                      <span className="text-white">{shipping.toFixed(2)} EGP</span>
                     </div>
                     <div className="pt-8 border-t border-white/10 flex justify-between items-center">
                       <span className="text-xl font-black text-white uppercase tracking-tighter">Total</span>
-                      <span className="text-4xl font-black text-blue-400 tracking-tighter">${total.toFixed(2)}</span>
+                      <span className="text-4xl font-black text-blue-400 tracking-tighter">{total.toFixed(2)} EGP</span>
                     </div>
                   </div>
                   <button 
