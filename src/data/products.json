@@ -1,134 +1,70 @@
 [
-  {
-    "id": "1",
-    "name": "Apex Performance Tee",
-    "price": 45,
-    "oldPrice": 60,
-    "discount": "25% OFF",
-    "category": "Apparel",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=800" },
-      { "name": "Back", "path": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=800" }
-    ],
-    "sizes": ["S", "M", "L", "XL"],
-    "description": "High-performance moisture-wicking fabric designed for maximum intensity workouts."
-  },
-  {
-    "id": "2",
-    "name": "CloudWalk Trainers",
-    "price": 120,
-    "oldPrice": 150,
-    "discount": "20% OFF",
-    "category": "Footwear",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1542291026-7eec264c27ff?w=800" },
-      { "name": "Side", "path": "https://images.unsplash.com/photo-1595950653106-6c9ebd614d3a?w=800" }
-    ],
-    "sizes": ["40", "41", "42", "43", "44", "45"],
-    "description": "Ultra-lightweight trainers with responsive cushioning for long-distance running."
-  },
-  {
-    "id": "3",
-    "name": "Stealth Compression Tights",
-    "price": 55,
-    "oldPrice": 75,
-    "discount": "26% OFF",
-    "category": "Apparel",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1539185441755-769473a23570?w=800" }
-    ],
-    "sizes": ["XS", "S", "M", "L"],
-    "description": "Advanced compression technology to support muscles and reduce fatigue."
-  },
-  {
-    "id": "4",
-    "name": "Quantum Sport Watch",
-    "price": 180,
-    "oldPrice": 220,
-    "discount": "SALE",
-    "category": "Accessories",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1508685096489-7aacd43bd3b1?w=800" }
-    ],
-    "sizes": ["Standard"],
-    "description": "Next-gen GPS tracking and health monitoring in a sleek carbon-fiber body."
-  },
-  {
-    "id": "5",
-    "name": "AeroSwift Shorts",
-    "price": 35,
-    "oldPrice": 45,
-    "discount": "22% OFF",
-    "category": "Apparel",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800" }
-    ],
-    "sizes": ["M", "L", "XL"],
-    "description": "Featherlight running shorts with built-in liner and key pocket."
-  },
-  {
-    "id": "6",
-    "name": "Titan Gym Bag",
-    "price": 75,
-    "oldPrice": 100,
-    "discount": "25% OFF",
-    "category": "Accessories",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=800" }
-    ],
-    "sizes": ["40L", "60L"],
-    "description": "Durable, water-resistant gym bag with separate shoe compartment."
-  },
-  {
-    "id": "7",
-    "name": "Ignite Yoga Mat",
-    "price": 40,
-    "oldPrice": 55,
-    "discount": "27% OFF",
-    "category": "Accessories",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=800" }
-    ],
-    "sizes": ["Standard"],
-    "description": "Extra-grip eco-friendly yoga mat for perfect balance."
-  },
-  {
-    "id": "8",
-    "name": "Vector Windbreaker",
-    "price": 85,
-    "oldPrice": 110,
-    "discount": "23% OFF",
-    "category": "Apparel",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?w=800" }
-    ],
-    "sizes": ["S", "M", "L", "XL"],
-    "description": "Wind-resistant and water-repellent jacket for all-weather training."
-  },
-  {
-    "id": "9",
-    "name": "Velocity Socks (3-Pack)",
-    "price": 18,
-    "oldPrice": 25,
-    "discount": "Special",
-    "category": "Accessories",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1586350977771-b3b0abd50c82?w=800" }
-    ],
-    "sizes": ["M", "L"],
-    "description": "Anti-blister cushioned socks for high-impact protection."
-  },
-  {
-    "id": "10",
-    "name": "Aero-Form Cap",
-    "price": 15,
-    "oldPrice": 20,
-    "discount": "25% OFF",
-    "category": "Accessories",
-    "images": [
-      { "name": "Main", "path": "https://images.unsplash.com/photo-1588850561407-ed78c282e89b?w=800" }
-    ],
-    "sizes": ["One Size"],
-    "description": "Breathable, sweat-wicking cap for outdoor runs and daily wear."
-  }
+    {
+        "id": "1",
+        "name": "محارب",
+        "price": 699,
+        "oldPrice": 1000,
+        "discount": "30% OFF",
+        "category": "T-Shirt",
+        "images": [
+            {
+                "name": "Main",
+                "path": "image/id_1_main.png"
+            },
+            {
+                "name": "Back",
+                "path": "image/id_1_back.png"
+            },
+            {
+                "name": "Sample1",
+                "path": "image/id_1_sample1.jpg"
+            },
+            {
+                "name": "Sample2",
+                "path": "image/id_1_sample2.jpg"
+            }
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "description": ""
+    },
+    {
+        "id": "2",
+        "name": "My Ex Is My Biggest Fan",
+        "price": 699,
+        "oldPrice": 1000,
+        "discount": "30% OFF",
+        "category": "T-Shirt",
+        "images": [
+            {
+                "name": "Main",
+                "path": "image/id_2_main.png"
+            },
+            {
+                "name": "Front",
+                "path": "image/id_2_front.png"
+            },
+            {
+                "name": "Sample1",
+                "path": "image/id_2_sample1.jpg"
+            },
+            {
+                "name": "Sample2",
+                "path": "image/id_2_sample2.jpg"
+            },
+            {
+                "name": "Sample3",
+                "path": "image/id_2_sample3.jpg"
+            }
+        ],
+        "sizes": [
+            "M",
+            "L",
+            "XL"
+        ],
+        "description": ""
+    }
 ]
